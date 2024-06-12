@@ -1,0 +1,257 @@
+/* **************** */
+/* Below 1200px (Landscape tablets) 1200px / 16px = 75em*/
+/* **************** */
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 0.5625 = 56.25% */
+    font-size: 56.25%;
+  }
+  .heading-secondary {
+    font-size: 3.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-paragraph {
+    font-size: 1.4rem;
+  }
+  .mg-top {
+    margin-top: 0.8rem;
+  }
+  .hero-btn {
+    margin-top: 2.2rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.3rem;
+    padding: 1.4rem 4.8rem;
+  }
+  .about-container {
+    column-gap: 6.5rem;
+  }
+  .card--features {
+    padding: 5.4rem 4rem;
+  }
+  .about-container--mobile {
+    display: none;
+  }
+}
+
+/* **************** */
+/* Below 944px (Tablets) 944px / 16px = 59em*/
+/* **************** */
+@media (max-width: 59em) {
+  .header {
+    justify-content: space-between;
+  }
+  .section-about {
+    padding: 8.5rem 0 6.5rem 0;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container--desktop {
+    display: none;
+  }
+  .about-container--mobile {
+    display: block;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+  }
+  .text--content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  .content-width-ctn {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .about--image {
+    width: 100%;
+  }
+  .card--type {
+    padding: 2.5rem;
+  }
+  .card--features {
+    padding: 3.9rem 3.5rem;
+  }
+  .swiper--navs {
+    right: -40rem;
+  }
+  .contact--us {
+    padding: 0;
+  }
+  .swipper-ctn {
+    margin-top: 8rem;
+  }
+  .contact__img {
+    width: 5rem;
+  }
+  .reach--out {
+    margin-bottom: 3rem;
+  }
+  /* Mobile Navigation */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .nav--link:link,
+  .nav--link:visited {
+    font-size: 2.5rem;
+  }
+
+  .nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    /* hidding the nav */
+    opacity: 0;
+    /*Step 2 -  Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* Step 3 - Hide it from screen readers */
+    visibility: hidden;
+    /* Browser support 
+  To check browser support for each app,
+   u can use "canIuse.com" website.*/
+    backdrop-filter: blur(10px);
+    /* For Safari and Firefox users*/
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav--list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* **************** */
+/* Below 704px (Smaller tablets)*/
+/* **************** */
+@media (max-width: 44em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+  .section-about {
+    padding: 6rem 0 3rem 0;
+  }
+  .content-width-ctn {
+    gap: 4rem;
+  }
+  .text--content {
+    font-size: 1.5rem;
+  }
+  .text--description {
+    font-size: 2rem;
+  }
+  .tik-mgn {
+    margin-bottom: 0.7rem;
+  }
+  .ticket--cards {
+    gap: 3rem;
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  .card--features {
+    padding: 4rem 3.5rem;
+  }
+  .card--type {
+    padding: 2.6rem 2.5rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1rem;
+    padding: 1.2rem 3rem;
+  }
+  .sponsor--img,
+  .swipper-ctn {
+    margin-top: 5rem;
+  }
+  .swipper__text {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .swiper-slide img {
+    height: 50%;
+  }
+  .reach--out {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  .swiper-slide {
+    max-width: 50%;
+  }
+  .swiper-wrapper {
+    height: 85%;
+  }
+  .swiper {
+    height: 43%;
+  }
+  .swiper--navs {
+    width: 22%;
+    right: -27rem;
+    bottom: 25%;
+  }
+  .contact--us {
+    margin-top: 3rem 0 1.5rem 0;
+  }
+  .swipper-ctn {
+    height: 60rem;
+    padding-bottom: 3rem;
+  }
+  .contact__img {
+    width: 3rem;
+  }
+  .section--faq {
+    padding: 4.8rem 0 6rem 0;
+  }
+  .accordion--body {
+    margin-top: 4.5rem;
+  }
+  .copyright {
+    font-size: 1.2rem;
+  }
+  .footer {
+    padding: 1.5rem 0;
+  }
+}
+
+/* **************** */
+/* Below 544px (Phones)
+/* **************** */
+@media (max-width: 34em) {
+}
