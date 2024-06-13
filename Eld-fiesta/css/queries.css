@@ -1,4 +1,4 @@
-@media (max-width: 85em) {
+@media (max-width: 100em) {
   .about-container--mobile,
   .text--content__mobile,
   .volunteer-mobile,
@@ -348,11 +348,10 @@
     padding: 7rem 7rem 2rem 7rem;
     border-radius: 2rem 2rem 0 0;
   }
+
   .card--features {
+    padding: 2rem 2rem 2.5rem 2rem;
     border-radius: 0 0 2rem 2rem;
-  }
-  .card--features {
-    padding: 2rem 2.3rem 2.5rem 2.3rem;
     font-size: 1.2rem;
   }
   .vendor--content {
@@ -396,7 +395,7 @@
     max-width: 300px;
   }
   .accordion .contentBx .label {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .accordion .contentBx.active .content {
     font-size: 1.1rem;
