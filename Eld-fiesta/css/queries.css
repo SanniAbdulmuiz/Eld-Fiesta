@@ -1,3 +1,20 @@
+@media (max-width: 85em) {
+  .about-container--mobile,
+  .text--content__mobile,
+  .volunteer-mobile,
+  .hero__mobile {
+    display: none;
+  }
+  .hero__desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+  }
+}
+
 /* **************** */
 /* Below 1200px (Landscape tablets) 1200px / 16px = 75em*/
 /* **************** */
@@ -31,7 +48,10 @@
   .card--features {
     padding: 5.4rem 4rem;
   }
-  .about-container--mobile {
+  .about-container--mobile,
+  .text--content__mobile,
+  .volunteer-mobile,
+  .hero__mobile {
     display: none;
   }
 }
@@ -40,6 +60,11 @@
 /* Below 944px (Tablets) 944px / 16px = 59em*/
 /* **************** */
 @media (max-width: 59em) {
+  .text--content__mobile,
+  .volunteer-mobile,
+  .hero__mobile {
+    display: none;
+  }
   .header {
     justify-content: space-between;
   }
@@ -162,6 +187,11 @@
 /* Below 704px (Smaller tablets)*/
 /* **************** */
 @media (max-width: 44em) {
+  .text--content__mobile,
+  .volunteer-mobile,
+  .hero__mobile {
+    display: none;
+  }
   .heading-secondary {
     font-size: 3rem;
   }
@@ -254,4 +284,126 @@
 /* Below 544px (Phones)
 /* **************** */
 @media (max-width: 34em) {
+  .volunteer-desktop,
+  .hero__desktop {
+    display: none;
+  }
+  .swipper__destop {
+    display: none;
+  }
+  .volunteer-mobile {
+    display: block;
+  }
+  .hero__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile--hero {
+    text-align: center;
+  }
+  .hero {
+    padding: 0 3rem;
+  }
+  .mobile--hero__p {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .hero-paragraph {
+    font-size: 1.2rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.2rem;
+    padding: 1.2rem 3rem;
+  }
+  .nav--link:link,
+  .nav--link:visited {
+    font-size: 1.8rem;
+  }
+  .text--content__mobile {
+    display: block;
+    text-align: center;
+  }
+  .text--content__desktop {
+    display: none;
+  }
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
+  .section-about {
+    padding-bottom: 0;
+  }
+  .about--image {
+    height: 30rem;
+    padding-bottom: 0;
+  }
+  .ticket--card-2,
+  .ticket--card-1 {
+    flex-direction: column;
+  }
+  .card--type {
+    padding: 7rem 7rem 2rem 7rem;
+    border-radius: 2rem 2rem 0 0;
+  }
+  .card--features {
+    border-radius: 0 0 2rem 2rem;
+  }
+  .card--features {
+    padding: 2rem 2.3rem 2.5rem 2.3rem;
+    font-size: 1.2rem;
+  }
+  .vendor--content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .vendor--text {
+    max-width: 100%;
+  }
+  .text-width {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .text--content {
+    text-align: center;
+  }
+  .vendor-sp {
+    margin-bottom: 2.8rem;
+  }
+  .sponsor--img {
+    gap: 3rem;
+  }
+  .sponsor--img,
+  .swipper-ctn {
+    margin-top: 3rem;
+  }
+  .swipper__text {
+    font-size: 1.6rem;
+  }
+  .swiper--navs {
+    width: 33%;
+    right: -10rem;
+  }
+  .reach--out {
+    font-size: 1.8rem;
+  }
+  .accordion {
+    max-width: 300px;
+  }
+  .accordion .contentBx .label {
+    font-size: 1.1rem;
+  }
+  .accordion .contentBx.active .content {
+    font-size: 1.1rem;
+    padding: 7px;
+    height: 5rem;
+  }
+  .copyright {
+    font-size: 1rem;
+  }
 }

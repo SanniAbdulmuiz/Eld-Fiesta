@@ -10,7 +10,7 @@ btnNavEl.addEventListener("click", function () {
 // Swiper
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
-  spaceBetween: 25,
+  spaceBetween: 18,
   loop: true,
   centerSlide: "true",
   fade: "true",
@@ -32,7 +32,6 @@ const accordion = document.getElementsByClassName("contentBx");
 for (let i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", function () {
     this.classList.toggle("active");
-    console.log("clickd");
   });
 }
 

@@ -54,13 +54,27 @@
     <main>
       <section class="section-hero" id="hero">
         <div class="hero">
-          <h2 class="heading-secondary">Eid Fiesta 2.0</h2>
-          <p class="hero-paragraph">
-            An immersive experience celebrating islamic festivity.
-          </p>
-          <p class="hero-paragraph mg-top">
-            Halaal Entertainments | Zero Fasaad | Games | Halaal Entertainments
-          </p>
+          <div class="hero__desktop">
+            <h2 class="heading-secondary">Eid Fiesta 2.0</h2>
+            <p class="hero-paragraph">
+              An immersive experience celebrating islamic festivity.
+            </p>
+            <p class="hero-paragraph mg-top">
+              Halaal Entertainments | Zero Fasaad | Games | Halaal Entertainments
+            </p>
+          </div>
+          <div class="hero__mobile">
+            <h2 class="heading-secondary mobile--hero__p">Eid Fiesta 2.0</h2>
+            <p class="hero-paragraph mobile--hero">
+              An immersive experience celebrating islamic festivity.
+            </p>
+            <p class="hero-paragraph mg-top">
+              Halaal Entertainments | Zero Fasaad 
+            </p>
+            <p class="hero-paragraph mg-top">
+               | Games | Halaal Entertainments
+            </p>
+          </div>
           <div class="hero-btn">
             <a href="#contact" class="btn btn--full">Buy a ticket</a>
             <a href="#contact" class="btn btn--outline">Secure vendor slot</a>
@@ -112,7 +126,7 @@
           <div>
             <img
               class="about--image"
-              src="img/Frame 71.png"
+              src="img/image 3.png"
               alt="About image"
             />
           </div>
@@ -123,10 +137,14 @@
       <section class="section-tickets" id="tickets">
         <div class="ticket--header">
           <p class="text--description tik-mgn">Tickets</p>
-          <span class="text--content tik-mgn--cl"
+          <span class="text--content tik-mgn--cl text--content__desktop"
             >Secure your spots, Grab your tickets for an unforgettable
-            experience</span
-          >
+            experience
+          </span>
+          <span class="text--content tik-mgn--cl text--content__mobile"
+            >Secure your spots, <br> Grab your tickets for an unforgettable
+            experience
+          </span>
         </div>
         <div class="ticket--cards">
           <div class="ticket--card-1">
@@ -195,7 +213,7 @@
         <div class="ticket--header vol--bg">
           <p class="text--description ven-mgn">Volunteer</p>
         </div>
-        <div class="vendors--container">
+        <div class="vendors--container volunteer-desktop">
           <div class="vendor--content">
             <div class="vendor--text">
               <div class="text-width">
@@ -219,12 +237,36 @@
             </div>
           </div>
         </div>
+        <div class="vendors--container volunteer-mobile">
+          <div class="vendor--content">
+            <div class="vendor--img">
+              <img
+                src="img/Frame 119.png"
+                alt="Vendors image"
+                class="vendors__img"
+              />
+            </div>
+            <div class="vendor--text">
+              <div class="text-width">
+                <p class="text--description vol--text__mgn">
+                  Volunteer with Us
+                </p>
+                <span class="text--content vendor-sp"
+                  >Be a part of something special. <br />
+                  Click below to explore volunteer opportunities and join the
+                  team.
+                </span>
+                <a href="#hero" class="btn vol--pad">Volunteer now</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="section--community" id="commuinity">
         <div class="ticket--header com--bg">
           <p class="text--description ven-mgn">Community</p>
         </div>
-        <div class="vendors--container">
+        <div class="vendors--container volunteer-desktop">
           <div class="vendor--content">
             <div class="vendor--text">
               <div class="text-width">
@@ -239,6 +281,11 @@
                 <a href="#hero" class="btn com--pad">Join our community</a>
               </div>
             </div>
+            
+          </div>
+        </div>
+        <div class="vendors--container volunteer-mobile">
+          <div class="vendor--content">
             <div class="vendor--img">
               <img
                 src="img/pana.png"
@@ -246,6 +293,20 @@
                 class="vendors__img"
               />
             </div>
+            <div class="vendor--text">
+              <div class="text-width">
+                <p class="text--description vol--text__mgn">
+                  Join Eld Fiesta Community!
+                </p>
+                <span class="text--content vendor-sp"
+                  >Eld Fiesta isn't just an event. It is a diverse and rich
+                  commuinity of young muslims, bound by love, good vibe and
+                  energy. You should be a part of the commuinity also.
+                </span>
+                <a href="#hero" class="btn com--pad">Join our community</a>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -282,8 +343,6 @@
               <div class="swiper-slide"><img class="sl-img" src="img/slider/Frame 82.png" alt="Frame"></div>
             </div>
             <div class="swiper--navs">
-              <div class="swiper-button-next swiper-navBtn"></div>
-              <div class="swiper-button-prev swiper-navBtn"></div>
               <div class="swiper-pagination sw--pg_n"></div>
             </div>
           </div>
